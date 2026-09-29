@@ -22,6 +22,7 @@ declare global {
   };
 
   interface Window {
+    __cmuxDiffWorkerPool?: import("./worker-pool").DiffWorkerPoolStats;
     __cmuxPerformDiffViewerNavigationAction?: (action: string) => boolean;
     __cmuxDiffViewer?: {
       codeView?: unknown;
